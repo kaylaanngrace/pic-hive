@@ -1,19 +1,19 @@
 import React from "react";
+import Axios from 'axios'
 
-let widget = window.cloudinary.createUploadWidget({
-    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-    uploadPreset: process.env.CLOUDINARY_UPLOAD_PRESET,
-    source: ['local', 'url']
-}, (error, result) => {
-    if(!error && result && result.event === "success") {
-        console.log("Here's the image!", result.info)
-    }
-})
 
 const picUpload = () => {
+
+    const uploadImage = (files) => {
+        const formData = new FormData()
+        formData.append('file', files)
+    };
+
     return (
         <div>
-            {widget}
+            <input type="file" onChange={(e)=>{
+                uploadImage(e.target.files);
+            }}/>
         </div>
     )
 }
