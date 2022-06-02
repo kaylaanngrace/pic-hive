@@ -14,6 +14,10 @@ const thoughtSchema = new Schema({
     required: true,
     trim: true,
   },
+  thoughtPic: {
+    type: Buffer,
+    
+  },
   createdAt: {
     type: Date,
     default: Date.now,

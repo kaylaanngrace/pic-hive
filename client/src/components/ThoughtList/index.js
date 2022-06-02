@@ -27,6 +27,9 @@ const ThoughtList = ({
                   <span style={{ fontSize: '1rem' }}>
                     made this post {thought.createdAt}
                   </span>
+
+                  {thought.thoughtPic}
+                  
                 </Link>
               ) : (
                 <>
