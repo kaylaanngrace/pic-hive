@@ -23,7 +23,7 @@ const Footer = () => {
             aria-label="heart"
             aria-hidden="false"
           >
-            ❤️
+            💛
           </span>{' '}
           by the Pic Hive team.
         </h4>
