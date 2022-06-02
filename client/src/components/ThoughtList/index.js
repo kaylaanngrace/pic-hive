@@ -8,7 +8,7 @@ const ThoughtList = ({
   showUsername = true,
 }) => {
   if (!thoughts.length) {
-    return <h3>No Thoughts Yet</h3>;
+    return <h3>No Pics Yet</h3>;
   }
 
   return (
@@ -25,7 +25,7 @@ const ThoughtList = ({
                 >
                   {thought.thoughtAuthor} <br />
                   <span style={{ fontSize: '1rem' }}>
-                    had this thought on {thought.createdAt}
+                    made this post {thought.createdAt}
                   </span>
 
                   {thought.thoughtPic}
@@ -34,7 +34,7 @@ const ThoughtList = ({
               ) : (
                 <>
                   <span style={{ fontSize: '1rem' }}>
-                    You had this thought on {thought.createdAt}
+                    You posted this Pic on {thought.createdAt}
                   </span>
                 </>
               )}
@@ -46,7 +46,7 @@ const ThoughtList = ({
               className="btn btn-primary btn-block btn-squared"
               to={`/thoughts/${thought._id}`}
             >
-              Join the discussion on this thought.
+              Comment on this Pic.
             </Link>
           </div>
         ))}

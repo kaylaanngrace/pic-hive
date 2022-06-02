@@ -23,9 +23,9 @@ const Footer = () => {
             aria-label="heart"
             aria-hidden="false"
           >
-            ❤️
+            💛
           </span>{' '}
-          by the Tech Thoughts team.
+          by the Pic Hive team.
         </h4>
       </div>
     </footer>
