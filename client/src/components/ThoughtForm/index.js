@@ -63,7 +63,7 @@ const ThoughtForm = () => {
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3>Add a Pic to the Hive.</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -94,7 +94,7 @@ const ThoughtForm = () => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Thought
+                Add Pic
               </button>
             </div>
             {error && (
