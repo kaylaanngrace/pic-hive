@@ -27,6 +27,9 @@ const ThoughtList = ({
                   <span style={{ fontSize: '1rem' }}>
                     had this thought on {thought.createdAt}
                   </span>
+
+                  {thought.thoughtPic}
+                  
                 </Link>
               ) : (
                 <>

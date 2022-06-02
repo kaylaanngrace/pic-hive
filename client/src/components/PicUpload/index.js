@@ -10,9 +10,9 @@ const PicUpload = () => {
     const uploadImage = () => {
         const formData = new FormData()
         formData.append('file', imageSelected)
-        formData.append("upload_preset", process.env.CLOUDINARY_UPLOAD_PRESET)
+        formData.append("upload_preset", "h9pi2ot1")
 
-        Axios.post(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`, formData)
+        Axios.post(`https://api.cloudinary.com/v1_1/dsx7vhge4/image/upload`, formData)
         .then((response)=> {
             console.log(response)
         });
@@ -25,7 +25,9 @@ const PicUpload = () => {
             }}/>
             <button onClick={uploadImage}>Upload Image</button>
 
-            <Image cloudName="dsx7vhge4" publicId="" />
+            <Image 
+            style={{width: 200}}
+            cloudName="dsx7vhge4" publicId="https://res.cloudinary.com/dsx7vhge4/image/upload/v1654193124/emwig3vgcgqxlkwdqpau.jpg" />
         </div>
     )
 }

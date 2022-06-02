@@ -88,8 +88,10 @@ const ThoughtForm = () => {
                 onChange={handleChange}
               ></textarea>
               
+              <div>
               <PicUpload />
-
+              </div>
+              
             </div>
 
             <div className="col-12 col-lg-3">
